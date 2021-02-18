@@ -12,15 +12,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://HynemanKan.github.io/favicon.ico?v=1613653665003">
+<link rel="shortcut icon" href="https://HynemanKan.github.io/favicon.ico?v=1613653959222">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://HynemanKan.github.io/styles/main.css">
 
 
   
-
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
   
-    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+
   
 
 
@@ -36,7 +36,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://HynemanKan.github.io">
-        <img class="avatar" src="https://HynemanKan.github.io/images/avatar.png?v=1613653665003" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://HynemanKan.github.io/images/avatar.png?v=1613653959222" alt="" width="32px" height="32px">
       </a>
       <a href="https://HynemanKan.github.io">
         <h1 class="site-title">hyneman Blog</h1>
@@ -135,9 +135,9 @@
 
       
         
-
+          <div id="gitalk-container"></div>
         
-          <div id="disqus_thread"></div>
+
         
       
 
@@ -177,21 +177,24 @@ var app = new Vue({
 
 
   
-
-  
-    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
 
-    var options = {
-      shortname: ' hynemankan-github-io',
-      apikey: '94iGU5Kc1rccgDipVb7nDecGmnaMAVw8WpubldJV3ocFXUJACWsLr0ixi1YLzpeF',
-    }
-    if ('https://disqus.com/api/') {
-      options.api = 'https://disqus.com/api/'
-    }
-    var dsqjs = new DisqusJS(options)
+      var gitalk = new Gitalk({
+        clientID: 'b6c5faa6319ef9b35941',
+        clientSecret: 'bcc0803064f9a18a55fda3c3dbd7f1e17b60d40e',
+        repo: 'gitalkDB',
+        owner: 'HynemanKan',
+        admin: ['HynemanKan'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
   
 
 
