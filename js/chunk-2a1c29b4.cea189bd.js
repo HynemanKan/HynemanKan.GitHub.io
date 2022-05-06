@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2a1c29b4"],{8479:function(t,e,n){t.exports=n.p+"img/empty.6c3391bf.svg"},d829:function(t,e,n){"use strict";n.r(e);var c=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("el-card",{staticStyle:{margin:"10px"}},[n("el-empty",{attrs:{image:t.emptyImgUrl,description:"施工中"}})],1)},r=[],a={name:"Home",data:function(){return{article:"",emptyImgUrl:n("8479")}}},i=a,l=n("0c7c"),p=Object(l["a"])(i,c,r,!1,null,null,null);e["default"]=p.exports}}]);
+//# sourceMappingURL=chunk-2a1c29b4.cea189bd.js.map

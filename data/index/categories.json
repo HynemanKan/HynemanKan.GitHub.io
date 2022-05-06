@@ -1,12 +1,1 @@
-[
-  {
-    "name":"网络",
-    "path":"network",
-    "count":10
-  },
-  {
-    "name":"vertx",
-    "path":"vertx",
-    "count":5
-  }
-]
+[{"name": "network", "path": "/category/network", "count": 1}, {"name": "\u8fd0\u7ef4\u76f8\u5173", "path": "/category/%D4%CB%CE%AC%CF%E0%B9%D8", "count": 1}, {"name": "centos", "path": "/category/centos", "count": 1}]
